@@ -1,0 +1,50 @@
+@keyframes nameBG {
+  0% { --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/11.gif); }
+  15% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/12.gif); }
+  25% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/13.gif); }
+  35% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/14.gif); }
+45% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/15.gif); }
+  55% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/16.gif); }
+  65% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/11.gif); }
+  75% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/12.gif); }
+   85% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/13.gif); }
+    95% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/14.gif); }
+     100% {  --username-bg: url(//raw.githubusercontent.com/dwnas/assets/main/snippets/nameBackground/15.gif); }
+}
+
+
+
+@import url("https://minidiscordthemes.github.io/FluentStatusIcons/FluentStatusIcons.theme.css");
+:root { 
+animation: nameBG 5s ease infinite;
+}
+
+
+@import url("https://minidiscordthemes.github.io/FluentStatusIcons/FluentStatusIcons.theme.css");
+:root { 
+animation: nameBG 5s ease infinite;
+ /*
+ made by dwnas edited by Glitched
+                            To change the background, please edit the number. (1-16)
+*/}
+
+/* chat field */           
+[class*=contents]:has(img[src*="1172507865630646358"]) [class*=username],
+/* memberlist */
+[role=listitem] :has(img[src*="1172507865630646358"]) [class*=name-],
+/* settings profile card */
+[class*=profileCard] span,
+/* reviewdb */
+.vc-rdb-view :has(img[src*="1172507865630646358"]) [class*=username],
+/* replies */
+[class*=repliedMessage]:has(img[src*="1172507865630646358"]) [class*=username]
+ 
+ /* elements that aren't sized correctly, uncomment below if you want */
+
+/*,[class*=nameTag] [data-text-variant="text-sm/normal"],
+[class*=userPopoutInner]:has(img[src*="1172507865630646358"]) [class*=nickname],
+[class*=voiceUser]:has([style*="1172507865630646358"]) [class*=username]*/ 
+{
+    background-image: var(--username-bg) !important;
+    text-shadow: 1px 1px 4px;
+}
